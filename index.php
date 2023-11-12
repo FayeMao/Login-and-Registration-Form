@@ -61,7 +61,7 @@
 
                 <div class="field input">
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password" required>
+                    <input type="password" name="password" id="password" required>
                 </div>
                 <a href="#">Forgot password?</a>
                 <p><input type="radio" id="radio" /> Remember me </p>

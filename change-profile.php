@@ -52,6 +52,7 @@
                     $res_Age = $result['Age'];
                     $res_firstName = $result['FirstName'];
                     $res_lastName = $result['LastName'];
+                    $res_Password = $result['Password'];
                 }
             
         ?>
@@ -79,7 +80,7 @@
 
                 <div class="field input">
                     <label for="password">Password</label>
-                    <input type="text" name="password" value="<?php echo $res_Password; ?>" id="password" required>
+                    <input type="password" name="password" value="<?php echo $res_Password; ?>" id="password" required>
                 </div>
 
                 <div class="field">
