@@ -63,7 +63,9 @@
                     <label for="password">Password</label>
                     <input type="text" name="password" id="password" required>
                 </div>
-
+                <a href="#">Forgot password?</a>
+                <p><input type="radio" id="radio" /> Remember me </p>
+        
                 <div class="field">
                     <input type="submit" name="submit" class="btn" value="Login" required>
                 </div>
