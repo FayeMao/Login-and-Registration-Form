@@ -16,11 +16,32 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <header>
+<header>
         <div class="container-head">
-            <img src="/img/Kinetic.svg" alt="Logo">
+            <a href="home.php"><img src="img/Kinetic.svg" alt="Logo"></a>
+        </div>
+
+        <div class="right-links">
+            <?php
+                $id = $_SESSION['id'];
+                $query = mysqli_query($con, "SELECT * FROM users WHERE ID=$id" );
+                while ($result = mysqli_fetch_assoc($query)) {
+                    $res_Uname = $result['Username'];
+                    $res_firstName = $result['FirstName'];
+                    $res_lastName = $result['LastName'];
+                    $res_Password = $result['Password'];
+                    $res_Email = $result['Email'];
+                    $res_Age = $result['Age'];
+                    $res_Id = $result['Id'];
+                };
+
+                echo "<a href='change-profile.php?Id=$res_Id'>Change Your Profile</a>";
+            ?>
+
+            <a href="php/logout.php"><button class="btn">Log Out</button></a>
         </div>
     </header>
+    
     <div class="container">
         <div class="box form-box">
 
